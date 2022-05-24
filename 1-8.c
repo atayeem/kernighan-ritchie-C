@@ -1,6 +1,8 @@
+// Count the number of tabs, newlines, and blanks
+
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int c, tabs, newlines, blanks;
     tabs = 0;

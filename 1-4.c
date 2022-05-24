@@ -1,7 +1,8 @@
+// Make it go the other way (C -> F instead of F -> C)
+
 #include <stdio.h>
-/* print Fahrenheit-Celsius table
-for fahr = 0, 20, ..., 300; floating-point version */
-main()
+
+int main(void)
 {
     float fahr, celsius;
     float lower, upper, step;
@@ -13,7 +14,7 @@ main()
     /* step size */
     celsius = lower;
     printf("Celsius to Fahrenheit Table\n\n");
-    while (fahr <= upper) {
+    while (celsius <= upper) {
         fahr = (9.0/5.0) * celsius + 32.0;
         printf("\t%3.0f %6.1f\n", celsius, fahr);
         celsius = celsius + step;

@@ -1,9 +1,11 @@
+// Show that getchar() != EOF is equal to 0 or 1
+
 #include <stdio.h>
 
 // if you type anything, this program prints "1", but if you press CTRL + D, it prints 0.
-// terrible solution but I don't know how to program
+// weird solution but I don't know how else to do it
 
-main()
+int main(void)
 {
     printf("%d\n", getchar() != EOF);
 }

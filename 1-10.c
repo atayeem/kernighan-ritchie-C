@@ -1,6 +1,8 @@
+// Replace newline with \n, backslash with \\, and backspace (?) with \b
+
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int c;
 

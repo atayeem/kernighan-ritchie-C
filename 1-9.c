@@ -1,6 +1,8 @@
+// Replace a string of one or more blanks with a single blank
+
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int c;
     int wasBlank = 0;
