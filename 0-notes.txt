@@ -1,0 +1,26 @@
+enum name {something = x, item2, item3, item4} will make item2 =  x + 1, item3 = x + 2, item4 = x + 3
+strlen returns the length of a string, excludes the \0 null terminator
+
+\a alert (bell) character
+\b backspace
+\f formfeed
+\n newline
+\r carriage return
+\t horizontal tab
+\v vertical tab
+\\ backslash
+\? question mark
+\' single quote
+\" double quote
+\ooo octal number
+\xhh hexadecimal number
+
+ a char can be signed???
+
+basic data:
+char, int, float, double
+prefixes:
+short, long, signed, unsigned
+
+getchar gets the next character
+putchar prints a character

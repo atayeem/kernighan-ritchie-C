@@ -1,0 +1,3 @@
+I would put in documents with known word counts.
+
+If there's two spaces between words, it might count a word that doesn't exist in between the spaces.
