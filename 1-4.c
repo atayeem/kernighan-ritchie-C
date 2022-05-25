@@ -6,12 +6,9 @@ int main(void)
 {
     float fahr, celsius;
     float lower, upper, step;
-    lower = 0;
-    upper = 300;
-    step = 20;
-    /* lower limit of temperatuire scale */
-    /* upper limit */
-    /* step size */
+    lower = 0;   /* lower limit of temperatuire scale */
+    upper = 300; /* upper limit */
+    step = 20;   /* step size */
     celsius = lower;
     printf("Celsius to Fahrenheit Table\n\n");
     while (celsius <= upper) {

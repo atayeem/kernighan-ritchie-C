@@ -24,3 +24,10 @@ short, long, signed, unsigned
 
 getchar gets the next character
 putchar prints a character
+
+function parameters are not constant. you can modify them.
+like you could
+void bruh(int c)
+{
+    c++;
+}
