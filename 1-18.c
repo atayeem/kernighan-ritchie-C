@@ -10,7 +10,10 @@ int removeTrailing(char s[MAXLEN], char out[MAXLEN])
     int i;
     for (i = 0; i != '\0'; i++)
     {
-        
+        switch (s[i])
+        {
+            
+        }
     }
 }
 

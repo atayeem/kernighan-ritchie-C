@@ -39,7 +39,7 @@ void reverse(char s[MAXLEN], char out[MAXLEN], int len)
 {
     int i;
     
-    // Second pass, write to output array backwards
+    // Write to output array backwards
     for (i = 0; i < len; i++)
         out[len - 1 - i] = s[i];
     out[len] = '\0';
