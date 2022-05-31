@@ -31,3 +31,8 @@ void bruh(int c)
 {
     c++;
 }
+
+if it's an array, because the pointer to the array is passed in, the array itself can be modified
+this applies to any pointer passed to a function (like scanf(&s))
+
+'c' != "c" since one is an int and the other is an array
