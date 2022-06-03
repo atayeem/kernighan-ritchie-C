@@ -36,3 +36,49 @@ if it's an array, because the pointer to the array is passed in, the array itsel
 this applies to any pointer passed to a function (like scanf(&s))
 
 'c' != "c" since one is an int and the other is an array
+
+if the array passed into a function starts with const, it can't be modified
+
+expressions are evaluated left to right. if the loop is like this:
+
+for (i=0; i < lim-1 && (c=getchar()) != '\n' && c != EOF; ++i)
+
+i < lim-1 must be evaluated first, or else an extra character will be written to the array,
+overwriting the null terminator and destroying the array
+
+chars are smaller than ints, Uint8
+
+<ctype.h> runs tests to determine what type something is
+if it's a char of a number (like '3'), it can be detected by
+isdigit('3') (returns 1)
+
+signed chars are a thing apparently, but negative characters never print.
+
+"Conversion rules are more complicated when unsigned operands are involved. The problem
+is that comparisons between signed and unsigned values are machine-dependent, because they
+depend on the sizes of the various integer types. For example, suppose that int is 16 bits and
+long is 32 bits. Then -1L < 1U , because 1U , which is an unsigned int , is promoted to a
+signed long . But -1L > 1UL because -1L is promoted to unsigned long and thus appears
+to be a large positive number."
+
+"Longer integers are converted to shorter ones or to char s by dropping the excess high-order
+bits."
+
+(type) value: cast
+
+x = ++n; means x is n + 1
+x = n++; means x is n
+
+BITWISE OPERATORS
+& and
+| or
+^ xor
+<< left shift
+>> right shift
+~ one's complement (invert all bits)
+
+"Note that x & ~077 is independent of word length, and is
+thus preferable to, for example, x & 0177700 , which assumes that x is a 16-bit quantity. The
+portable form involves no extra cost, since ~077 is a constant expression that can be evaluated
+at compile time."
+don't try to be smart
